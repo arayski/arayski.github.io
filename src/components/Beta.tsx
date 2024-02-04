@@ -1,9 +1,9 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Box, Flex, Stack, VStack, Text, Image, Heading, useColorModeValue, Badge, IconButton } from "@chakra-ui/react";
+import { Box, Flex, Stack, VStack, Text, Image, Heading, useColorModeValue, Badge, IconButton, Button } from "@chakra-ui/react";
 import Canvas from "./Canvas";
 //import { Link } from "react-router-dom";
-import {
+/*import {
     FaDiscord,
     FaFacebookSquare,
     FaInstagram,
@@ -11,6 +11,8 @@ import {
     FaYoutube,
     FaTiktok,
 } from 'react-icons/fa';
+*/
+import { DiGithubBadge } from "react-icons/di";
 import TypingAnimation from './TypingAnimation';
 // edit this file to change the content of the beta page
 import { content, staffProfiles, responsive } from '../components/BetaContent';
@@ -26,7 +28,7 @@ export default function BetaPage() {
             {/* 1st Page */}
             <Canvas style={{ width: '100vw', height: '100vh', position: 'absolute', top: 0, left: 0 }} />
             <Stack position="absolute" top={0} left={0} justifyContent={'center'} h={'100vh'} w={'100vw'} pl={5} pr={5}>
-                <Box fontSize={["60px", "80px", "120px"]} fontWeight='700' lineHeight='1.1' textColor='white'>
+                <Box maxWidth="100%" px={5} fontSize={["60px", "80px", "120px"]} fontWeight='700' lineHeight='1.1' textColor='white'>
                     <TypingAnimation />
                 </Box>
                 {/*<Box lineHeight='1.7' textColor='white' fontSize={"40px"}>
@@ -48,7 +50,7 @@ export default function BetaPage() {
                     textAlign={['center', null, 'left']}
                     p={4}
                 >
-                    <Image src="AWS_80.svg" alt="GoalTac Logo" display="block" mx="auto" style={{ width: "200px", height: "200px" }}/>
+                    <Image src="https://ed-aura.com/wp-content/uploads/2022/05/agile-methodology.gif" alt="SDLC" display="block" mx="auto" /*style={{ width: "200px", height: "200px" }}*/ />
                     <Box fontSize={['30px', '4xl']} fontWeight='700' lineHeight='1.1'>
                         My Projects
                     </Box>
@@ -62,7 +64,10 @@ export default function BetaPage() {
                         <VStack key={index}>
                             <Flex width='100%' alignItems='center'>
                                 <Box p='.3rem 1rem' fontWeight='600'>{vstack.number}</Box>
-                                <Box fontWeight='600' pl='20px'>{vstack.title}</Box>
+                                {/*<Box fontWeight='600' pl='20px'>{vstack.title}</Box>*/}
+                                <Button as="a" href={vstack.title} target="_blank" colorScheme="gray">
+                                    {vstack.type}
+                                    </Button>
                             </Flex>
                             <Box p='.3rem 1rem'>{vstack.text}</Box>
                         </VStack>
@@ -108,7 +113,7 @@ export default function BetaPage() {
                                 >
                                     <Image boxSize='100px' mb={4} pos={'relative'} /*bgGradient='radial(blue.500, teal.300)'*/ src={staff.image || undefined}/>
                                     <Heading fontSize={'2xl'} fontFamily={'body'} >{staff.name} </Heading>
-                                    <Text fontWeight={600} color={'gray.500'} mb={4}>{staff.title}</Text>
+                                    
                                     <Text textAlign={'center'} color={useColorModeValue('gray.800', 'gray.200')} px={3}>{staff.desc}</Text>
                                     <Box>
                                         {staff.badges.map((badge, i) => {
@@ -128,14 +133,15 @@ export default function BetaPage() {
             <Stack direction={['column', null, 'row']} p={2}>
 
                 <Stack direction={'row'} mt={4} ml={4} mr={4}>
-                    
+                    <IconButton as="a" href="https://github.com/arayski/" target="_blank" rel="noopener noreferrer" aria-label="Discord" icon={<DiGithubBadge />} />
+                    {/*
                     <IconButton as="a" href="https://discord.com/" target="_blank" rel="noopener noreferrer" aria-label="Discord" icon={<FaDiscord />} />
                     <IconButton as="a" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" icon={<FaFacebookSquare />} mr={2} />
                     <IconButton as="a" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" icon={<FaInstagram />} mr={2} />
                     <IconButton as="a" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" icon={<FaTwitter />} mr={2} />
                     <IconButton as="a" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" icon={<FaYoutube />} mr={2} />
                     <IconButton as="a" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok" icon={<FaTiktok />} />
-                    
+                    */}
                 </Stack>
 
                 <Box p={4} ml={'auto'}>

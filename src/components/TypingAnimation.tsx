@@ -9,8 +9,8 @@ const TypingAnimation: React.FC = () => {
     const options = {
       strings: [
         'Hi I\'m Andrew Rayski',
-        'I\'m a Student',
-        'I\'m a Aspiring Software Engineer',
+        'I\'m a Computer Science Student',
+        'I\'m an Aspiring Software Engineer',
         'Welcome to my Portfolio!'
       ],
       typeSpeed: 50,
@@ -33,7 +33,7 @@ const TypingAnimation: React.FC = () => {
     };
   }, []);
 
-  return <span ref={el} style={{ whiteSpace: 'pre' }} />;
+  return <span ref={el} style={{ whiteSpace: 'pre-wrap' }} />;
 };
 
 export default TypingAnimation;
