@@ -55,7 +55,7 @@ export default function BetaPage() {
                         My Projects
                     </Box>
                     <Text>
-                        Here are some of the projects I have been working on during my years of learning Computer Science
+                        Here are some of the projects I have been working on during my years of learning Computer Science!
                     </Text>
                 </VStack>
 
@@ -145,7 +145,7 @@ export default function BetaPage() {
                 </Stack>
 
                 <Box p={4} ml={'auto'}>
-                    <Text>© Copyright 2023. All Rights Reserved.</Text>
+                    <Text>© Copyright 2024. All Rights Reserved.</Text>
                 </Box>
 
             </Stack>

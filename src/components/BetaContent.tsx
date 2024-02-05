@@ -24,20 +24,22 @@ export const content = [
         number: 'Crypto Tracker',
         title: 'https://github.com/arayski/Crypto',
         type: 'Repo',
-        text: `Join or create your own community specified towards a topic of choice!
-            Communities are ranked based on how many points they earn. The more
-            productive you and your community are, the higher you place! This will
-            give that accountability rarely seen on online platforms, especially in
-            a productive setting.`,
+        text: ``,
     },
     {
         number: 'Python REST API',
         title: 'https://github.com/arayski/Delivery-API',
         type: 'Repo',
-        text: `Want to just organize your tasks? No problem.
-            Want to use the app to meet other people? You can do that too.
-            GoalTac's app allows you to use it in any way you like without
-            jeopordizing your experience!`
+        text: ``
+    },
+    {
+        number: 'Portfolio',
+        title: 'https://github.com/arayski/arayski.github.io',
+        type: 'Repo',
+        text: `To develop this portfolio I used React with Typescript and a Vite development server. 
+            I set up a CI/CD pipeline using github actions to automate the deployment of the portfolio.
+            For styling the page I used Chakra UI for a sleek and modern design as well as different 
+            libraries such as typed.js and react-bootstrap.`,
     },
     {
         number: 'Fullstack Nutrition App',
@@ -45,7 +47,8 @@ export const content = [
         type: 'Coming Soon...',
         text: `This app is something I am currently designing and planning on developing in the upcoming weeks.
             This basic premise of the app is for a user to keep count of their daily calories, macronutrients,
-            and micronutrients.`,
+            and micronutrients. Some of the technologies I am using for this project are React, Python, Amazon Cognito,
+            Amazon RDS, AWS Amplify, and more.`,
     }
 ];
 
