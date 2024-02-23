@@ -2,9 +2,17 @@
 
 export const content = [
     {
+        number: 'QNA',
+        title: 'http://qena.live.s3-website-us-east-1.amazonaws.com/',
+        type: 'Website',
+        text: `QNA is the project I am currently working on. The premise of QNA is free alternative to iClicker
+                with more features engaging students for enhanced classroom experience. Some of the technologies I am 
+                working with on QNA are AWS, React, and TypeScript.`,
+    },
+    {
         number: 'Goaltac',
         title: 'https://goaltac.net',
-        type: 'Beta',
+        type: 'Website',
         text: `During the summer of 2023 I worked on a startup app with some other students at UConn. 
             The idea for the app first started out as a social productivity app but has since evolved into
             a gamified networking app. While working on Goaltac I developed various different features such as
@@ -13,7 +21,7 @@ export const content = [
     {
         number: 'Course Registration App',
         title: 'https://github.com/arayski/ClassSystem',
-        type: 'Repo',
+        type: 'Repository',
         text: `For this project I worked with a team of four to create a fullstack web application 
             utilizing a Vue.js frontend with a microservice architectured backend leveraging different AWS services. 
             This project was very exciting and I got to work with a plethora of different services such as creating a 
@@ -23,32 +31,34 @@ export const content = [
     {
         number: 'Crypto Tracker',
         title: 'https://github.com/arayski/Crypto',
-        type: 'Repo',
-        text: ``,
+        type: 'Repository',
+        text: `Recently I have become interested in cryptocurrency and I decided I wanted a way to personally track trending coins.
+               In this project I implemented an online API and transfomed the json data into a dynamic react display while styling the tracker
+               with css.`,
     },
     {
         number: 'Python REST API',
         title: 'https://github.com/arayski/Delivery-API',
-        type: 'Repo',
-        text: ``
+        type: 'Repository',
+        text: `In this project I used a new Python framework called FastAPI to build a RESTful API. The API functions acts 
+                as a delivery service API with routes for`
     },
     {
         number: 'Portfolio',
         title: 'https://github.com/arayski/arayski.github.io',
-        type: 'Repo',
+        type: 'Repository',
         text: `To develop this portfolio I used React with Typescript and a Vite development server. 
             I set up a CI/CD pipeline using github actions to automate the deployment of the portfolio.
             For styling the page I used Chakra UI for a sleek and modern design as well as different 
             libraries such as typed.js and react-bootstrap.`,
     },
     {
-        number: 'Fullstack Nutrition App',
+        number: 'Health and Wellness App',
         title: '',
         type: 'Coming Soon...',
         text: `This app is something I am currently designing and planning on developing in the upcoming weeks.
-            This basic premise of the app is for a user to keep count of their daily calories, macronutrients,
-            and micronutrients. Some of the technologies I am using for this project are React, Python, Amazon Cognito,
-            Amazon RDS, AWS Amplify, and more.`,
+            This basic premise of the app is for a user to keep count of their daily calories, macronutrients, micronutrients,
+             and how much they exercised.`,
     }
 ];
 

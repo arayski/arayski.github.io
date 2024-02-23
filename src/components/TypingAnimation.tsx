@@ -2,22 +2,22 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 const TypingAnimation: React.FC = () => {
-  const el = useRef<HTMLSpanElement>(null); // Defines the type for the ref
+  const el = useRef<HTMLSpanElement>(null); 
   const typed = useRef<Typed | null>(null);
 
   useEffect(() => {
     const options = {
       strings: [
-        'Hi I\'m Andrew Rayski',
-        'I\'m a Computer Science Student',
-        'I\'m an Aspiring Software Engineer',
+        // 'Hi I\'m Andrew Rayski',
+        // 'I\'m a Computer Science Student',
+        // 'I\'m an Aspiring Software Engineer',
         'Welcome to my Portfolio!'
       ],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 1000,
       startDelay: 500,
-      loop: true,
+      loop: false,
       showCursor: true,
       cursorChar: '|',
     };

@@ -15,7 +15,7 @@ import Canvas from "./Canvas";
 import { DiGithubBadge } from "react-icons/di";
 import TypingAnimation from './TypingAnimation';
 // edit this file to change the content of the beta page
-import { content, staffProfiles, responsive } from '../components/BetaContent';
+import { content, staffProfiles, responsive } from './BetaContent';
 //import { useEffect } from 'react';
 
 
@@ -28,7 +28,7 @@ export default function BetaPage() {
             {/* 1st Page */}
             <Canvas style={{ width: '100vw', height: '100vh', position: 'absolute', top: 0, left: 0 }} />
             <Stack position="absolute" top={0} left={0} justifyContent={'center'} h={'100vh'} w={'100vw'} pl={5} pr={5}>
-                <Box maxWidth="100%" px={5} fontSize={["60px", "80px", "120px"]} fontWeight='700' lineHeight='1.1' textColor='white'>
+                <Box maxWidth="100%" px={5} fontSize={["60px", "80px", "110px"]} fontWeight='700' lineHeight='1.1' textColor='white'>
                     <TypingAnimation />
                 </Box>
                 {/*<Box lineHeight='1.7' textColor='white' fontSize={"40px"}>
@@ -49,14 +49,29 @@ export default function BetaPage() {
                     justifyContent="center"
                     textAlign={['center', null, 'left']}
                     p={4}
+                    spacing={10}
                 >
-                    <Image src="https://ed-aura.com/wp-content/uploads/2022/05/agile-methodology.gif" alt="SDLC" display="block" mx="auto" /*style={{ width: "200px", height: "200px" }}*/ />
-                    <Box fontSize={['30px', '4xl']} fontWeight='700' lineHeight='1.1'>
-                        My Projects
-                    </Box>
-                    <Text>
-                        Here are some of the projects I have been working on during my years of learning Computer Science!
-                    </Text>
+                    {/*<Image src="https://ed-aura.com/wp-content/uploads/2022/05/agile-methodology.gif" alt="SDLC" display="block" mx="auto"  />   */}
+                    {/*style={{ width: "200px", height: "200px" }}*/}
+                    <VStack>
+                        <Box fontSize={['30px', '4xl']} fontWeight='700' lineHeight='1.1'>
+                            About Me
+                        </Box>
+                        <Text>
+                            My name is Andrew Rayski and I am a junior studying Computer Science at the University of Connecticut.
+                             
+
+                        </Text>
+                    </VStack>
+                    
+                    <VStack>
+                        <Box fontSize={['30px', '4xl']} fontWeight='700' lineHeight='1.1'>
+                            My Projects
+                        </Box>
+                        <Text>
+                            Here are some of the projects I have been working on during my years of learning Computer Science!
+                        </Text>
+                    </VStack>
                 </VStack>
 
                 <VStack spacing='2rem' pt='2rem' pb='2rem'>
