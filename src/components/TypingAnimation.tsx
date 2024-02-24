@@ -8,7 +8,7 @@ const TypingAnimation: React.FC = () => {
   useEffect(() => {
     const options = {
       strings: [
-        // 'Hi I\'m Andrew Rayski',
+        'Hi I\'m Andrew Rayski',
         // 'I\'m a Computer Science Student',
         // 'I\'m an Aspiring Software Engineer',
         'Welcome to my Portfolio!'

@@ -1,12 +1,10 @@
-
-
 export const content = [
     {
         number: 'QNA',
         title: 'http://qena.live.s3-website-us-east-1.amazonaws.com/',
         type: 'Website',
         text: `QNA is the project I am currently working on. The premise of QNA is free alternative to iClicker
-                with more features engaging students for enhanced classroom experience. Some of the technologies I am 
+                with more features engaging students for an enhanced classroom experience. Some of the technologies I am 
                 working with on QNA are AWS, React, and TypeScript.`,
     },
     {
@@ -40,8 +38,9 @@ export const content = [
         number: 'Python REST API',
         title: 'https://github.com/arayski/Delivery-API',
         type: 'Repository',
-        text: `In this project I used a new Python framework called FastAPI to build a RESTful API. The API functions acts 
-                as a delivery service API with routes for`
+        text: `In this project I used a modern Python framework called FastAPI to build a RESTful API. The API functions acts 
+            as a delivery service API with custom route operations for order placement, status updates, and user order
+            management. Additionally, I Integrated JSON Web Tokens (JWT) authentication, ensuring secure and efficient user authentication and authorization.`
     },
     {
         number: 'Portfolio',

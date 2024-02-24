@@ -27,7 +27,7 @@ export default function BetaPage() {
 
             {/* 1st Page */}
             <Canvas style={{ width: '100vw', height: '100vh', position: 'absolute', top: 0, left: 0 }} />
-            <Stack position="absolute" top={0} left={0} justifyContent={'center'} h={'100vh'} w={'100vw'} pl={5} pr={5}>
+            <Stack position="absolute" top={0} left={0} justifyContent={'center'} h={'100vh'} w={'100vw'} pl={5} pr={5} alignItems="center">
                 <Box maxWidth="100%" px={5} fontSize={["60px", "80px", "110px"]} fontWeight='700' lineHeight='1.1' textColor='white'>
                     <TypingAnimation />
                 </Box>
@@ -50,19 +50,21 @@ export default function BetaPage() {
                     textAlign={['center', null, 'left']}
                     p={4}
                     spacing={10}
+                    
                 >
-                    {/*<Image src="https://ed-aura.com/wp-content/uploads/2022/05/agile-methodology.gif" alt="SDLC" display="block" mx="auto"  />   */}
+                    {/*<Image src="https://ed-aura.com/wp-content/uploads/2022/05/agile-methodology.gif" alt="SDLC" display="block" mx="auto"  />  */}
                     {/*style={{ width: "200px", height: "200px" }}*/}
-                    <VStack>
-                        <Box fontSize={['30px', '4xl']} fontWeight='700' lineHeight='1.1'>
-                            About Me
-                        </Box>
-                        <Text>
-                            My name is Andrew Rayski and I am a junior studying Computer Science at the University of Connecticut.
+                    
+                        
+                        {/*<Text>
+                            I am a junior studying Computer Science at the University of Connecticut. I am 
+                            a highly motivated student with a strong interest in software development. My academic journey
+                            in computer science has honed my problem solving skills and approaches to challenges. In my spare time
+                            like to innovate, volunteer, and meet new people.
                              
 
-                        </Text>
-                    </VStack>
+                </Text>*/}
+                    
                     
                     <VStack>
                         <Box fontSize={['30px', '4xl']} fontWeight='700' lineHeight='1.1'>
