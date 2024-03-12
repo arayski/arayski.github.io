@@ -1,7 +1,7 @@
 export const content = [
     {
         number: 'QNA',
-        title: 'http://qena.live.s3-website-us-east-1.amazonaws.com/',
+        title: 'https://qena.live/',
         type: 'Website',
         text: `QNA is the project I am currently working on. The premise of QNA is free alternative to iClicker
                 with more features engaging students for an enhanced classroom experience. Some of the technologies I am 
@@ -50,15 +50,15 @@ export const content = [
             I set up a CI/CD pipeline using github actions to automate the deployment of the portfolio.
             For styling the page I used Chakra UI for a sleek and modern design as well as different 
             libraries such as typed.js and react-bootstrap.`,
-    },
-    {
-        number: 'Health and Wellness App',
-        title: '',
-        type: 'Coming Soon...',
-        text: `This app is something I am currently designing and planning on developing in the upcoming weeks.
-            This basic premise of the app is for a user to keep count of their daily calories, macronutrients, micronutrients,
-             and how much they exercised.`,
     }
+    // {
+    //     number: 'Health and Wellness App',
+    //     title: '',
+    //     type: 'Coming Soon...',
+    //     text: `This app is something I am currently designing and planning on developing in the upcoming weeks.
+    //         This basic premise of the app is for a user to keep count of their daily calories, macronutrients, micronutrients,
+    //          and how much they exercised.`,
+    // }
 ];
 
 export const staffProfiles = [
